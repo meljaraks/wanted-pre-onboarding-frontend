@@ -64,17 +64,33 @@ export const SignIn = () => {
   }, [value]);
 
   return (
-    <>
-      <span>로그인</span>
-      <input data-test-id="email-input" onKeyUp={updateInput} />
-      <input
-        data-test-id="password-input"
-        type="password"
-        onKeyUp={updateInput}
-      />
-      <button disabled={isDisabled} onClick={goLogin}>
+    <div className="flex flex-col justify-center items-center">
+      <span className="text-lg font-bold flex mb-4 items-center justify-center ">
+        로그인
+      </span>
+      <div className="flex gap-2 justify-center items-center mb-5">
+        <input
+          className="text-xl font-black rounded-lg border-gray-900 border-solid border-2 px-2"
+          data-test-id="email-input"
+          onKeyUp={updateInput}
+        />
+      </div>
+      <div className="flex gap-2 justify-center items-center mb-6">
+        <input
+          className="text-xl font-black rounded-lg border-gray-900 border-solid border-2 px-2"
+          data-test-id="password-input"
+          type="password"
+          onKeyUp={updateInput}
+        />
+      </div>
+
+      <button
+        className="bg-teal-500 p-[10px] text-white font-bold text-xl rounded-lg w-[350px] disabled:opacity-25"
+        disabled={isDisabled}
+        onClick={goLogin}
+      >
         로그인하기
       </button>
-    </>
+    </div>
   );
 };
