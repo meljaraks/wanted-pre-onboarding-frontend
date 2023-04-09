@@ -1,15 +1,3 @@
-/**
- * CHECKLIST
- * [x]  유효성 검사 이메일 조건: @ 포함
- * [x]  유효성 검사 비밀번호 조건: 8자 이상
- * [x] 유효성 검사를 통과하지 못한다면 button에 disabled 속성을 부여
- * WARNING 유효성검사시 주어진 조건 이외의 조건 추가 X
- *
- * [x] : 로그인 완료시 /TODO 이동
- * [x] : 로컬 스토리지에 JWT 저장
- * [x] : 로컬 스토리지에 토큰이 있을때 /TODO로 리다이렉트
- */
-
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAxios } from "../hooks/useAxios";
