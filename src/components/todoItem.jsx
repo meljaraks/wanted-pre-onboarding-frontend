@@ -34,7 +34,7 @@ export const TodoItem = ({
       {edited ? (
         <label className="flex gap-3 items-center">
           <input
-            className="text-xl rounded-lg border-gray-900 border-solid border-2 px-2 w-[20%]"
+            className="text-xl rounded-lg border-gray-900 border-solid border-2 px-2 w-[450px]"
             data-testid="modify-input"
             onKeyUp={keyupEvent}
             defaultValue={_todo}
@@ -62,7 +62,7 @@ export const TodoItem = ({
             onClick={(e) => updateTodo(id, e)}
             defaultChecked={isCompleted}
           />
-          <span className="w-[30%] text-left">{_todo}</span>
+          <span className="w-[350px] text-left">{_todo}</span>
           <button
             className="bg-teal-500 p-[10px] text-white font-bold text-xl rounded-lg"
             data-testid="modify-button"

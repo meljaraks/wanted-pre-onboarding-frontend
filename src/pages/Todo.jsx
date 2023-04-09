@@ -64,7 +64,7 @@ export const Todo = () => {
       <span className="text-lg font-bold flex mb-4">할일</span>
       <div className="flex gap-1 mb-5 ">
         <input
-          className="text-xl font-black rounded-lg border-gray-900 border-solid border-2 px-2"
+          className="text-xl font-black rounded-lg border-gray-900 border-solid border-2 px-2 w-[450px]"
           data-testid="new-todo-input"
           onKeyUp={keyUpEvent}
         />
