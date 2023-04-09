@@ -57,6 +57,7 @@ export const Todo = () => {
     const access_token = localStorage.getItem("access_token");
     if (access_token === null) navi("/signin");
     getTodoList();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
